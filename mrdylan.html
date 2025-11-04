@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width,initial-scale-1" />
+    <title>MrDylan - YouTuber & Streamer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:whgt@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --blue-1: #05264a; /* deep sea */
+            --blue 2: #0b568f ;/* mid */
+            --accent: #00d4ff; /* bright aqua */
+            --glass: rgba(255,255,255,0.06);
+            --card: rgba(255,255,255,0.04);
+            --glass-2: rgba(255,255,255,0.08);
+            color-scheme: dark;
+        }
+        *{box-sizing: border-box}
+        html,body{height: 100%;margin: 0; font-family: Inter,system-ui, -apple-system,Segoe UI, Roboto, 'Helvetica Neue',Arial}
+        body {
+            background: linear-gradient(180deg,var(--blue-1) 0%, var(--blue-2) 60%);
+            -webkit-font-smoothing:antialiased;
+            color: #e6f6ff;
+            line-height: 1.45;
+            display: flex;flex-direction: column;min-height: 100vh;
+        }
+        /* waves */
+        .waves{position: absolute; left: 0; right: 0; top: 0; height: 320px; pointer-events: none;}
+        header{position: relative;z-index: index 10}
+        .container{max-width: 1100px;margin: 0 auto;padding: 24px}
+
+        /* nav */
+        .nav{display: flex;align-items: center;justify-content: space-between;gap: 12px}
+        .brand{display: flex;align-items: center;gap: 12px}
+        .logo span{font-size: 20px;color: #05264a}
+        nav ul{display: flex;gap: 14px;list-style: none;margin: 0;padding: 0}
+        nav a{color: dbefff;text-decoration: none; padding: 8px 12px;border-radius: 10px;font-weight: 600}
+        nav a:hover{background: var(--glass)}
+        .cta{background: linear-gradient(90deg,var(--accent),#6fe8ff);color: #05264a;padding: 10px 14px;border-radius: 10px;text-decoration: none;font-weight: 700}
+
+        /* hero */
+        .hero{padding: 40px 0 80px; display: grid;grid-template-columns: 1fr 360px;gap: 28px;align-items: center}
+        .hero h1{font-size: 40px; margin:0 0 8px}
+        .hero p{margin: 0 0 18px;color: #cfeeff}
+        .socials{display: flex;gap: 10px}
+        .chip{background: var(--glass);padding: 8px 12px;border-radius: 999px; font-weight: 600}
+
+        .card{background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));padding: 18px;border-radius: 16px;box-shadow: 0 8px 30px rgba(2, 6, 23, 0.5)}
+        .profile{display: flex; gap: 14px; align-items: center}
+        .avatar{width: 84px;height: 84px; border-radius: 16px; background: linear-gradient(180deg, #08345a, #0b5f90);display: flex; align-items: center; justify-content: center;font-weight: 800;font-size: 28px}
+        .meta small{opacity: 0.9; color: #cbeeff;}
+
+        /* sections */
+        section{padding: 32px 0}
+        h2{margin: 0 0  12px}
+        .grid{display: grid;grid-template-columns:repeat(3, 1fr);gap:16px}
+        .video{border-radius: 12px; overflow: hidden; background: var(--card);}
+        .video iframe{width: 100%; height: 200px; border: 0; display: block;}
+
+        /* schedule */
+        .schedule table{width: 100%;border-collapse: collapse}
+        .schedule td, .schedule th{padding: 10px; border-bottom: 1px; solid rgba(255, 255, 255, 0.04)}
+
+        footer{margin-top: auto; padding:28px 0;text-align:Center;color:#cfeeff; opacity:0.95}
+
+        /* responsive */
+        @media (max-width:980px) {
+            .hero{grid-template-columns: 1fr}
+            .grid{grid-template-columns: repeat(2,1fr)}
+        }
+        @media (max-width:980px) {
+            nav ul{display: none}
+            .hero h1{font-size: 28px}
+            .grid{grid-template-columns: 1fr}
+            .avatar{width: 64px; height: 64px}
+        }
+
+        /* small interactions */
+        .btn{display: inline-block; padding: 8px 12px; border-radius: 10px; text-decoration: none}
+        .muted{opacity: 0.85; color: #cfeeff}
+
+        /* subtle animated glow */
+        .glow{position: relative}
+        .glow:after{content: ''; position: absolute; inset: -6px; border-radius: 18px; filter: blur(18px);opacity: 0.12; background: linear-gradient(90deg, var(--accent), #6fe8ff); z-index: -1;}
+        </style>
+        </head>
+        <svg class="waves" viewBox="0 0  1440  320" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+                <path fill="url(#gl)" d="M0, 64L48,74.7C96,85,192,107,288,128C384,149,480,171,576,160C672,149,768,107,864,90.7C960,75,1056,85,1152,117.3C1248,149,1344,203,1392,229.3L1440,256L1440,0L1392,0C1344,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,96,0,48,0L0,0Z" ></path>
+            </svg>
+
+            <header>
+                <div class="container nav">
+                    <div class="brand">
+                        <div class="logo"><span>></span>div>
+                            <div>
+                                <div style="font-weight: 800">MrDylan</div>
+                                <div style="font-size: 12px;color: #cfeeff; opacity: 0.9">YouTuber • Streamer</div>
+                            </div>
+                        </div>
+
+                        <nav>
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li>><a href="#videos">Video</a></li>
+                                <li><a href="#streams">Stream</a></li>
+                                <li><a href="#schedule">Orario</a></li>
+                            </ul>
+                        </nav>
+
+                    <div style="display: flex;gap: 10px;align-items: center">
+                        <a class="cta" href="#subscribe">Iscriviti</a>
+                    </div>
+                    </div>
+                </header>
+
+                <main class="container">
+                    <section class="hero">
+                        <div>
+                            <h1>Benvenuti sul canale di <span style="color: var(--accent)">MrDylan</span></h1>
+                            <p>Gameplay, reaction, talk show e live con la community. Nuovi video ogni settimana e stream dal vivo più volte alla settimana.</p>
+                            <div style="display: flex; gap: 10px; align-items: center; margin-top: 12px">
+                                <a class="btn glow" href="#videos">Ultimi video</a>
+                                <a class="btn" href="#streams">Prossimo stream</a>
+                                <div style="flex: 1"></div>
+                            </div>
+
+                            <div style="margin-top: 18px" class="card">
+                                <div class="profile">
+                                    <div class="avatar">MD</div>
+                                    <div class="meta">
+                                        <div style="font-weight: 700">MrDylan</div>
+                                        <small>Streamer italiano • Gaming & Entertainment</small>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 12px; color: #cfeeff; opacity: 0.95">Ciao! Sono Dylan: gioco, faccio reaction e chiacchiero con la community. Seguimi sui social per non perdere niente.</div>
+                                <div style="margin-top: 12px; display: flex; gap: 8px">
+                                    <a class="chip" href="#">YouTube</a>
+                                    <a class="chip" href="#">Twitch</a>
+                                    <a class="chip" href="#">Instagram</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <aside>
+                            <div class="card">
+                                <h3 style="margin-top: 0">Prossimo Stream</h3>
+                                <p class="muted">Giovedì • 21:00 CET</p>
+                                <div style="margin-top: 12px; font-weight: 700">Battle Royale Night</div>
+                                <div style="margin-top: 12px">Ricompense per la chat e giochi con gli iscritti</div>
+                                <div style="margin-top: 14px; display: flex; gap: 8px">
+                                    <a class="btn" href="#streams">Dettagli</a>
+                                    <a class="btn cta" href="#subscribe">Iscriviti</a>
+                                </div>
+                            </div>
+                        </aside>
+                    </section>
+
+                    <section id="videos">
+                        <h2>Ultimi video</h2>
+                        <div class="grid">
+                            <div class="video card">
+                                <!-- sostituire src con l'ID reale del video -->
+                                 <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Video 1" allowfullscreen></iframe>
+                                 <div style="padding: 12px">Titolo video 1<br><small class="muted">2 giorni fa • 12:34</small></div>
+                            </div>
+                            <div class="video card">
+                                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Video 2" allowfullscreen></iframe>
+                                <div style="padding: 12px">Titolo video 2<br><small class="muted">1 settimana fa • 08:12</small></div>
+                            </div>
+                            <div class="video card"
+                            <iframe src="https://youtube.com/embed/VIDEO_ID_3" title="Video 3" allowfullscreen></iframe>
+                            <div style="padding: 12px">Titolo video 3<br><small class="muted">3 settimane fa • 20:11</small></div>
+                        </div>
+                    </div>
+                    </section>
+
+                    <section id="streams">
+                        <h2>Stream</h2>
+                        <div style="display: grid; grid-template-columns: 1fr  300px; gap: 16px; align-items: start">
+                            <div class="card">
+                                <h3 style="margin-top: 0">Stream dal vivo</h3>
+                                <p class="muted">Se MrDylan è live, qui comparirà la diretta (embed Twitch/YouTube).</p>
+                                <div style="margin-top: 12px; background: var(--card); padding: 12px; border-radius: 12px">
+                                    <!-- Embed Twitch placeholder-->
+                                     <iframe src="https://player.twitch.tv/?channel=CHANNEL_NAME&parent=localhost" height="360px" width="100%" allowfullscreen frameborder="0" scrolling="no"></iframe>
+                                </div>
+                            </div>
+
+                            <aside class="card">
+                                <h4 style="margin-top: 0">Social</h4>
+                                <div style="display: flex; flex-direction: column; column-gap: 8px; margin-top: 8px">
+                                    <a href="#">YouTube • 120k iscritti</a>
+                                    <a href="#">Twitch • 8k follower</a>
+                                    <a href="#">Instagram</a>
+                                    <a href="#">Twitter/X</a>
+                                </div>
+                            </aside>
+                        </div>
+                    </section>
+
+                    <section id="schedule" class="schedule">
+                        <h2>Orario</h2>
+                        <div class="card">
+                            <table>
+                                <thead>
+                                    <tr><th>Giorno</th></tr>Orario</th><th>Note</th></thead></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Lunedì</td></td>-<td></td class="muted">Riposo</td></tr>
+                                <tr><td>Mercoledì</td><td>21:00 - 23:00 <td><td>Stream competitivo</td></tr>
+                                <tr><td>Giovedì<td><td>21:00 - 23:00 <td><td>Community night</td></tr>
+                                <tr><td>Domenica<td><td>17:00 - 19:00<td><td>Co-op / Chill</td></tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section id="contact">
+                        <h2>Contatti</h2>
+                        <div style="display: grid; grid-template-columns: 1fr 320px; gap: 16px; align-items: start">
+                            <div class="card">
+                                <form onsubmit="event.preventDefault(); alert('Grazie! Messaggio inviato (simulazione)');">
+                                    <label style="display: block; margin-bottom: 8px">Nome</label>
+                                    <input style="width: 100%; padding: 10px; border-radius: 8px; border: 0; background: rgba(255, 255, 255, 0.02); color: inherit; margin-bottom: 10px;" placeholder="Tuo nome">
+                                    <label style="display: block; margin-bottom: 8px">Messaggio</label>
+                                    <textarea style="width: 100%; padding: 10px; border-radius: 8px; border: 0; background: rgba(255, 255, 255, 0.02); color: inherit; margin-bottom: 10px" rows="5" placeholder="Ciao MrDylan..."></textarea>
+                                    <button class="cta" type="submit">Invia</button>
+                                </form>
+                            </div>
+
+                            <aside class="card">
+                                <h4 style="margin-top: 0">Iscriviti</h4>
+                                <p class="muted">Ricevi una notifica quando ci sono nuovi video e stream.</p>
+                                <div style="margin-top: 8px">
+                                    <input placeholder="la tua@email.com" style="width: 100%; padding: 10px; border-radius: 8px; border: 0; background: rgba(255, 255, 255, 0.02); color: inherit; margin-bottom: 8px">
+                                    <a class="cta" href="#">Iscriviti</a>
+                                </div>
+                            </aside>
+                        </div>
+                    </section>
+
+                </main>
+
+                <footer>
+                    <div class="container">
+                        © <strong>MrDylan</strong> - Tutti i diritti riservati • Creato con ❤️
+                    </div>
+                </footer>
+
+                <script>
+                    // Small helpers: replace placehorders manually
+                    (function() {
+                        // Progressive enhancement: if you want to auto-set YouTube IDs, you can replace VIDEO_ID_... with real IDs
+                        // Mobile nav toggle could be added here if desired.
+                    })();
+                    </script>
+                    </body>
+</html>
